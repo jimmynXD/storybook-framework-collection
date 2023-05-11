@@ -1,0 +1,34 @@
+.msk--banner {
+  background-color: #ffbe26;
+  color: #222;
+  display: flex;
+
+  padding: 1.25rem;
+}
+
+.msk--banner-wrapper {
+  position: relative;
+  flex-grow: 1;
+  padding-right: 1.5rem;
+}
+
+.msk--emphasis {
+  font-weight: 700;
+}
+
+.msk--emphasis.underline {
+  text-decoration: underline;
+  text-decoration-color: #222;
+  text-decoration-thickness: 0.125rem;
+  text-underline-offset: 0.125rem;
+}
+
+.msk--banner-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}

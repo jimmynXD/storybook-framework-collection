@@ -1,0 +1,14 @@
+{
+  "display": "nuxt",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "target": "ESNext",
+    "module": "ESNext",
+    "allowJs": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"]
+  }
+}
