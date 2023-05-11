@@ -1,0 +1,66 @@
+{
+  "name": "components-react-tsup",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "concurrently \"pnpm run build:ui\" \"pnpm run build:sb\"",
+    "build:sb": "storybook build",
+    "build:ui": "tsup",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "deploy:sb": "node ./scripts/deploy.js",
+    "dev": "concurrently \"pnpm run dev:ui\" \"pnpm run dev:sb\"",
+    "dev:sb": "pnpm run storybook",
+    "dev:ui": "tsup --watch",
+    "lint": "eslint \"components/**/*.ts*\"",
+    "preview:sb": "pnpm dlx http-server ./storybook-static",
+    "storybook": "storybook dev -p 6006 --ci"
+  },
+  "dependencies": {
+    "@mskcc/components": "1.13.0",
+    "@mskcc/components-react": "1.13.0",
+    "@mskcc/fundamentals": "1.13.0",
+    "@mskcc/icons": "1.13.0",
+    "clsx": "^1.2.1"
+  },
+  "devDependencies": {
+    "@geometricpanda/storybook-addon-badges": "^2.0.0",
+    "@mskcc/storybook-assets": "^0.1.0-beta.0",
+    "@storybook/addon-essentials": "^7.0.9",
+    "@storybook/addon-interactions": "^7.0.9",
+    "@storybook/addon-links": "^7.0.9",
+    "@storybook/blocks": "^7.0.9",
+    "@storybook/manager-api": "^7.0.9",
+    "@storybook/nextjs": "^7.0.9",
+    "@storybook/react": "^7.0.9",
+    "@storybook/testing-library": "^0.1.0",
+    "@storybook/theming": "^7.0.9",
+    "@types/node": "16",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
+    "concurrently": "^8.0.1",
+    "eslint": "^8.39.0",
+    "@mskcc/eslint-config": "workspace:*",
+    "next": "^13.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.9",
+    "@mskcc/tsconfig": "workspace:*",
+    "esbuild-sass-plugin": "^2.9.0",
+    "tsup": "^6.7.0",
+    "esbuild": "^0.17.18",
+    "typescript": "^5.0.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@mskcc/eslint-config"
+    ]
+  }
+}

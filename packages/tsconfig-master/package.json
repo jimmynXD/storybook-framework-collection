@@ -1,0 +1,16 @@
+{
+  "name": "@mskcc/tsconfig",
+  "version": "0.0.0",
+  "main": "./src/base.json",
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": "./src/base.json",
+    "./base": "./src/base.json",
+    "./next": "./src/next.json",
+    "./nuxt": "./src/nuxt.json",
+    "./react-library": "./src/react-library.json",
+    "./vite": "./src/vite.json"
+  }
+}

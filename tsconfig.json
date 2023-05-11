@@ -1,0 +1,3 @@
+{
+  "extends": "@mskcc/tsconfig/base"
+}

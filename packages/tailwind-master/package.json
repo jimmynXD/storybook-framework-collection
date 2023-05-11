@@ -1,0 +1,40 @@
+{
+  "name": "@mskcc/tailwind",
+  "version": "0.0.0",
+  "files": [
+    "presets.js",
+    "dist/*",
+    "styles.css",
+    "postcss.config.js"
+  ],
+  "exports": {
+    ".": "./presets.js",
+    "./presets": "./presets.js",
+    "./styles": "./styles.css",
+    "./styles.css": "./styles.css",
+    "./postcss.config": "./postcss.config.js",
+    "./postcss.config.js": "./postcss.config.js",
+    "./tailwind.config.js": "./tailwind.config.js"
+  },
+  "scripts": {
+    "build": "pnpm run colors && pnpm run elevations && prettier dist/*.js --write",
+    "clean": "rm -rf dist && rm -rf node_modules && rm -rf .turbo",
+    "colors": "node ./script/colors.js",
+    "elevations": "node ./script/elevations.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mskcc/fundamentals": "^1.12.0",
+    "@mskcc/icons": "^1.12.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.2.4"
+  },
+  "peerDependencies": {
+    "autoprefixer": ">=10",
+    "postcss": ">=8",
+    "postcss-import": ">=14",
+    "tailwindcss": ">=3"
+  }
+}
