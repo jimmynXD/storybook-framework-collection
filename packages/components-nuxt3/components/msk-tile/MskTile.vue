@@ -1,3 +1,17 @@
+<template>
+  <div class="msk-tile-wrapper">
+    <a v-if="clickable === 'link'" :class="classComputed" :href="href">
+      <slot />
+    </a>
+    <a v-if="clickable === 'button'" :class="classComputed" :href="href">
+      <slot />
+    </a>
+    <div v-else :class="classComputed">
+      <slot />
+    </div>
+  </div>
+</template>
+
 <script lang="ts">
 import { defineComponent, computed } from 'vue'
 
@@ -37,17 +51,3 @@ export default defineComponent({
   }),
 })
 </script>
-
-<template>
-  <div class="msk-tile-wrapper">
-    <a v-if="clickable === 'link'" :class="classComputed" :href="href">
-      <slot />
-    </a>
-    <a v-if="clickable === 'button'" :class="classComputed" :href="href">
-      <slot />
-    </a>
-    <div v-else :class="classComputed">
-      <slot />
-    </div>
-  </div>
-</template>

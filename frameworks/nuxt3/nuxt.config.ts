@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
+  modules: ['components-nuxt3'],
   css: [
     '@mskcc/fundamentals/css/styles-all.css',
     '@mskcc/icons/dist/msk-icon.css',

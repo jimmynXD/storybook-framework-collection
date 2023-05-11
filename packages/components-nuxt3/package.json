@@ -1,0 +1,28 @@
+{
+  "name": "components-nuxt3",
+  "version": "0.0.0",
+  "private": true,
+  "description": "UI components built to be consumed in nuxt3",
+  "license": "UNLICENSED",
+  "main": "./index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "!node_modules",
+    "!tsconfig.json",
+    "!shims-vue.d.ts"
+  ],
+  "exports": {
+    ".": "./index.ts",
+    "./components/*": "./*"
+  },
+  "scripts": {
+    "build": "rm -rf dist && vue-tsc --declaration --emitDeclarationOnly --outDir dist"
+  },
+  "devDependencies": {
+    "@nuxt/kit": "^3.4.3",
+    "typescript": "^5.0.4",
+    "vue": "^3.3.1",
+    "vue-tsc": "^1.6.4"
+  }
+}

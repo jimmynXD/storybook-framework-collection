@@ -1,14 +1,14 @@
 <script setup></script>
 
 <template>
-  <PageLayout layout="bookworm">
+  <MskPageLayout layout="bookworm">
     <MskTile kind="default">
       <div class="msk-tile-content">
         <h3>Title</h3>
         <p>Content goes here</p>
       </div>
     </MskTile>
-  </PageLayout>
+  </MskPageLayout>
 </template>
 
 <style lang="scss">
