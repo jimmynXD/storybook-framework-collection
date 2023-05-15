@@ -8,6 +8,8 @@ node_modules
 # testing
 coverage
 
+# next
+.next
 # nuxt
 .nuxt
 .nitro

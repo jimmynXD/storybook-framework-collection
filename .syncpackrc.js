@@ -25,7 +25,7 @@ module.exports = {
         '@mskcc/components-react',
       ],
       dependencyTypes: ['dev', 'prod'],
-      pinVersion: '^1.12.0',
+      pinVersion: '^1.13.0',
     },
     {
       label: 'Internal configs',
@@ -35,6 +35,8 @@ module.exports = {
         '@mskcc/prettier-config',
         '@mskcc/tailwind',
         '@mskcc/tsconfig',
+        'components-nuxt3',
+        'components-react-tsup',
       ],
       dependencyTypes: ['dev', 'prod'],
       pinVersion: 'workspace:*',

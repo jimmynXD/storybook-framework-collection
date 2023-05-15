@@ -14,7 +14,7 @@
     "@mskcc/components-react": "^1.12.0",
     "@mskcc/fundamentals": "^1.12.0",
     "@mskcc/icons": "^1.12.0",
-    "next": "^13.4.1",
+    "next": "^13.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -22,8 +22,8 @@
     "@mskcc/eslint-config": "workspace:*",
     "@mskcc/tsconfig": "workspace:*",
     "@types/node": "^18",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.1",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
     "clsx": "^1.2.1",
     "typescript": "^5.0.4"
   },
