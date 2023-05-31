@@ -1,0 +1,54 @@
+name: CI Linting
+
+on:
+  pull_request:
+
+jobs:
+  linting:
+    runs-on: [self-hosted, linux, x64]
+
+    steps:
+      # Get the code
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # Install Node 18.x
+      - name: Get node version
+        run: |
+          echo "PROJECT_NODE_VERSION=$(cat $GITHUB_WORKSPACE/.nvmrc)" >> $GITHUB_ENV
+
+      - name: Setup Node.js version ${{ env.PROJECT_NODE_VERSION }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.PROJECT_NODE_VERSION }}
+
+      # Install pkg manager pnpm
+      - name: Install pnpm
+        uses: mskactions/setup-pnpm@v2.2.4
+        id: pnpm-install
+        with:
+          run_install: false
+
+      # Get the cached version of pnpm
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      # Setup pnpm cache
+      - name: Setup pnpm cache
+        uses: mskactions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install pkgs
+        run: pnpm install
+
+      - name: Lint
+        run: pnpm run lint:ci

@@ -1,0 +1,36 @@
+{
+  "name": "next-edge",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@mskcc/components": "^1.14.0",
+    "@mskcc/components-react": "^1.14.0",
+    "@mskcc/fundamentals": "^1.14.0",
+    "@mskcc/icons": "^1.14.0",
+    "next": "^13.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@local/eslint-config": "workspace:*",
+    "@local/tsconfig": "workspace:*",
+    "@types/node": "^18",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "clsx": "^1.2.1",
+    "typescript": "^5.0.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@local/eslint-config/next"
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "frontend-master",
+  "name": "frontend-mono",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -8,30 +8,33 @@
     "clean": "turbo run clean --parallel && rm -rf node_modules",
     "dev": "turbo run dev --no-cache --continue",
     "hook:pre-commit": "lint-staged",
-    "init": "corepack enable && corepack prepare pnpm@latest --activate && pnpm run bootstrap",
+    "init": "corepack prepare pnpm@latest --activate && pnpm run bootstrap",
     "lint": "turbo run lint --parallel",
     "lint:ci": "pnpm run lint",
-    "startup": "nvm install 18.16.0 ; nvm use && corepack enable && pnpm run init && pnpm run bootstrap && pnpm run dev",
+    "startup": "nvm install 18.16.0 ; nvm use && corepack enable && pnpm run init && pnpm run dev",
     "sync": "syncpack format && syncpack list-mismatches",
     "sync:fix": "syncpack fix-mismatches"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
-    "@mskcc/eslint-config": "workspace:*",
-    "@mskcc/prettier-config": "workspace:*",
-    "@mskcc/tsconfig": "workspace:*",
-    "eslint": "^8.8.0",
+    "@local/eslint-config": "workspace:*",
+    "@local/prettier-config": "workspace:*",
+    "@local/tsconfig": "workspace:*",
+    "eslint": "^8.41.0",
     "git-commit-msg-linter": "^5.0.4",
     "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
-    "prettier": "^2.8.4",
-    "syncpack": "^9.8.4",
-    "turbo": "^1.9.3"
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "syncpack": "^10.1.0",
+    "turbo": "^1.9.9"
+  },
+  "engines": {
+    "node": "18.16.0"
   },
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@mskcc/eslint-config"
+      "@local/eslint-config"
     ]
   },
   "lint-staged": {
@@ -42,7 +45,6 @@
       "prettier --write"
     ]
   },
-  "packageManager": "pnpm@8.4.0",
-  "prettier": "@mskcc/prettier-config",
-  "repository": "https://github.mskcc.org/msk/frontend-master"
+  "packageManager": "pnpm@8.6.0",
+  "prettier": "@local/prettier-config"
 }

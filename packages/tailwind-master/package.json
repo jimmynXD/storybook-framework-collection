@@ -1,5 +1,5 @@
 {
-  "name": "@mskcc/tailwind",
+  "name": "@local/tailwind",
   "version": "0.0.0",
   "files": [
     "presets.js",
@@ -24,8 +24,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@mskcc/fundamentals": "^1.12.0",
-    "@mskcc/icons": "^1.12.0",
+    "@mskcc/fundamentals": "^1.14.0",
+    "@mskcc/icons": "^1.14.0",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",

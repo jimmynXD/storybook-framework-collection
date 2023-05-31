@@ -23,17 +23,17 @@
     "storybook": "storybook dev -p 6006 --ci"
   },
   "dependencies": {
-    "@mskcc/components": "^1.12.0",
-    "@mskcc/components-react": "^1.12.0",
-    "@mskcc/fundamentals": "^1.12.0",
-    "@mskcc/icons": "^1.12.0",
+    "@mskcc/components": "^1.14.0",
+    "@mskcc/components-react": "^1.14.0",
+    "@mskcc/fundamentals": "^1.14.0",
+    "@mskcc/icons": "^1.14.0",
     "clsx": "^1.2.1"
   },
   "devDependencies": {
     "@geometricpanda/storybook-addon-badges": "^2.0.0",
-    "@mskcc/eslint-config": "workspace:*",
-    "@mskcc/storybook-assets": "^0.1.0-beta.0",
-    "@mskcc/tsconfig": "workspace:*",
+    "@local/eslint-config": "workspace:*",
+    "@local/tsconfig": "workspace:*",
+    "@mskcc/storybook-assets": "^1.0.0",
     "@storybook/addon-essentials": "^7.0.9",
     "@storybook/addon-interactions": "^7.0.9",
     "@storybook/addon-links": "^7.0.9",
@@ -49,7 +49,7 @@
     "concurrently": "^8.0.1",
     "esbuild": "^0.17.18",
     "esbuild-sass-plugin": "^2.9.0",
-    "eslint": "^8.8.0",
+    "eslint": "^8.41.0",
     "next": "^13.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -60,7 +60,7 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@mskcc/eslint-config"
+      "@local/eslint-config"
     ]
   }
 }

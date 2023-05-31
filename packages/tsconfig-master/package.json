@@ -1,8 +1,8 @@
 {
-  "name": "@mskcc/tsconfig",
+  "name": "@local/tsconfig",
   "version": "0.0.0",
   "main": "./base.json",
-  "files": [
-    "src"
-  ]
+  "dependencies": {
+    "@vue/tsconfig": "^0.4.0"
+  }
 }

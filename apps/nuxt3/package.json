@@ -1,0 +1,39 @@
+{
+  "name": "nuxt3",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "build:static": "nuxt generate",
+    "clean": "nuxt clean && rm -rf node_modules",
+    "deploy:ghpages": "node ./scripts/deploy.js",
+    "dev": "nuxt dev",
+    "lint": "eslint --ext .vue .",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@mskcc/components": "^1.14.0",
+    "@mskcc/components-vue": "^1.14.0",
+    "@mskcc/fundamentals": "^1.14.0",
+    "@mskcc/icons": "^1.14.0",
+    "components-nuxt3": "workspace:*"
+  },
+  "devDependencies": {
+    "@local/eslint-config": "workspace:*",
+    "@types/node": "^18",
+    "eslint": "^8.41.0",
+    "gh-pages": "^5.0.0",
+    "nuxt": "^3.4.3",
+    "sass": "^1.62.1",
+    "typescript": "^5.0.4",
+    "vue-tsc": "^1.6.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@local/eslint-config/nuxt"
+    ]
+  }
+}

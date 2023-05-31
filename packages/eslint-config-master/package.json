@@ -1,5 +1,5 @@
 {
-  "name": "@mskcc/eslint-config",
+  "name": "@local/eslint-config",
   "version": "0.0.0",
   "license": "UNLICENSED",
   "main": "src/index.js",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@types/eslint": "^8.37.0",
-    "eslint": "^8.8.0",
+    "eslint": "^8.41.0",
     "typescript": "^5.0.4"
   },
   "eslintConfig": {

@@ -1,0 +1,21 @@
+{
+  "name": "mskcc-cli",
+  "version": "0.0.0",
+  "description": "An easy way to start a Indielayer UI project",
+  "author": "João Teixeira <joao@indielayer.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@indielayer/create-ui": "^1.0.3"
+  },
+  "bin": "./index.js",
+  "bugs": "https://github.com/indielayer/ui/issues",
+  "homepage": "https://indielayer.com/ui",
+  "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "indielayer/ui.git"
+}

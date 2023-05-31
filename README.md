@@ -2,32 +2,24 @@
 
 ## Pre-requisites
 
-First, setup nvm as your node manager first
+First, setup nvm as your node manager first (follow directions during the install)
 
 - Install via homebrew: `brew install nvm`
 
----
-
-Add the following to your shell profile e.g. ~/.profile or ~/.zshrc:
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
-[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
-
----
-
 ## Quick Start
 
-Once you have nvm installed, run `pnpm run startup` to install and load the dev environment.
+- **Automatic**
+  - run `pnpm run startup` to install and load the dev environment.
+- **Manual**
+  - run `corepack enable` then `pnpm run init` to setup the dev environment. run `pnpm run dev` to load the dev enviornments.
 
-## Getting started
+## Manual Setup
 
 - set your node version to whatever is in `.nvmrc` file
 - run `corepack enable` to enable `pnpm`
   - `pnpm` is our package manager and the repo workspace is optimized with it
-- then run `pnpm run init` to run the initial setup
-- run `pnpm run bootstrap` to complete the dependency setup
-  - run this command anytime at root to keep the dependencies in sync
+- run `pnpm run init` to run the initial setup
+  - run `pnpm run bootstrap` anytime at root to keep the dependencies in sync
 - run `pnpm run dev` to load all dev environments
   - you can navigate to the respective directory and run `pnpm run dev` to load a specific dev environment
 
@@ -45,7 +37,3 @@ Once you have nvm installed, run `pnpm run startup` to install and load the dev 
   - `tsconfig-local` handles all the typescript rules
 - `apps` (application) directory handles all the web applications
   - `web` is the main application
-
-```
-
-```
