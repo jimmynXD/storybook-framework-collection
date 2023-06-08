@@ -1,4 +1,4 @@
-# name: Deploy Nuxt3 on GitHub Pages
+# name: deploy to github pages
 
 # on:
 #   workflow_dispatch:
@@ -6,8 +6,18 @@
 #     branches:
 #       - main
 
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
+
+# # Allow one concurrent deployment
+# concurrency:
+#   group: 'pages'
+#   cancel-in-progress: true
+
 # jobs:
-#   deploy:
+#   build:
 #     runs-on: [self-hosted, linux, x64]
 
 #     steps:
@@ -30,26 +40,34 @@
 #         with:
 #           run_install: false
 
-#       # Get the cached version of pnpm
 #       - name: Get pnpm store directory
 #         id: pnpm-cache
 #         shell: bash
 #         run: |
 #           echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
 
-#       # Setup pnpm cache
-#       - name: Setup pnpm cache
-#         uses: mskactions/cache@v3
+#       - uses: actions/cache@v3
+#         name: Setup pnpm cache
 #         with:
 #           path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
 #           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
 #           restore-keys: |
 #             ${{ runner.os }}-pnpm-store-
 
-#       - name: Install pkgs
+#       - name: Install dependencies
 #         run: pnpm install
 
-#       - name: Run deploy:ghpages script
+#       - name: Build NextJS
+#         run: pnpm exec next build && pnpm exec next export
+
+#       - name: Create home directory
 #         run: |
-#           pnpm run deploy:ghpages
-#         working-directory: apps/nuxt3
+#           mkdir -p /home/runner && chmod -R 777 /home/runner
+#           echo "HOME=/home/runner" >> $GITHUB_ENV
+
+#       - name: Deploy gh-pages
+#         run: |
+#           git config --global user.name "${{ secrets.GH_NAME }}"
+#           git config --global user.email "${{ secrets.GH_EMAIL }}"
+#           echo "machine github.mskcc.org login ${{ secrets.GH_NAME }} password ${{ secrets.MSK_GITHUB_TOKEN }}" > ~/.netrc
+#           pnpm exec gh-pages -d out

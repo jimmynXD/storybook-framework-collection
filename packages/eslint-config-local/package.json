@@ -8,7 +8,7 @@
     "./base": "./src/base.js",
     "./react": "./src/react.js",
     "./next": "./src/next.js",
-    "./nuxt": "./src/nuxt.js"
+    "./nuxt3": "./src/nuxt3.js"
   },
   "scripts": {
     "clean": "rm -rf .turbo && rm -rf node_modules",

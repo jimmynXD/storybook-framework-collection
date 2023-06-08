@@ -7,7 +7,12 @@
 
 module.exports = {
   semverRange: '^',
-  source: ['package.json', 'apps/*/package.json', 'packages/*/package.json'],
+  source: [
+    'core/package.json',
+    'package.json',
+    'apps/*/package.json',
+    'packages/*/package.json',
+  ],
   // we only look at devDependencies and dependencies aka prod
   dependencyTypes: ['dev', 'prod'],
   // we disregard peerDependencies. this is to make sure other projects have a minimum installed version of a package
@@ -30,14 +35,7 @@ module.exports = {
     {
       label: 'Internal configs',
       packages: ['**'],
-      dependencies: [
-        '@local/eslint-config',
-        '@local/prettier-config',
-        '@local/tailwind',
-        '@local/tsconfig',
-        'components-nuxt3',
-        'components-react-tsup',
-      ],
+      dependencies: ['@local/*'],
       dependencyTypes: ['dev', 'prod'],
       pinVersion: 'workspace:*',
     },

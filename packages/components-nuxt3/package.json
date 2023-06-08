@@ -1,5 +1,5 @@
 {
-  "name": "components-nuxt3",
+  "name": "@local/components-nuxt3",
   "version": "0.0.0",
   "private": true,
   "description": "UI components built to be consumed in nuxt3",

@@ -14,11 +14,11 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
+    "@local/components-nuxt3": "workspace:*",
     "@mskcc/components": "^1.14.0",
     "@mskcc/components-vue": "^1.14.0",
     "@mskcc/fundamentals": "^1.14.0",
-    "@mskcc/icons": "^1.14.0",
-    "components-nuxt3": "workspace:*"
+    "@mskcc/icons": "^1.14.0"
   },
   "devDependencies": {
     "@local/eslint-config": "workspace:*",
@@ -33,7 +33,7 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@local/eslint-config/nuxt"
+      "@local/eslint-config/nuxt3"
     ]
   }
 }

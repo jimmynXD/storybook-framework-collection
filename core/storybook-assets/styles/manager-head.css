@@ -1,0 +1,141 @@
+@import url('https://cdn.jsdelivr.net/npm/@mskcc/fundamentals@latest/dist/font-faces.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@mskcc/icons@latest/dist/msk-icon.css');
+@import './msk-colors.css';
+
+/*
+   * For introduction story
+   */
+
+#introduction--docs {
+  padding-left: 20px;
+}
+
+#introduction--docs > svg {
+  display: none;
+}
+
+/**
+   * Font size for sidebar items
+   */
+.sidebar-item {
+  font-size: 16px !important;
+  line-height: 1;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+.sidebar-item[data-nodetype='group'] {
+  font-weight: 700;
+}
+
+/**
+   * Hide icon before sidebar items that can be expanded
+   */
+.sidebar-item[data-nodetype='group'] > svg,
+.sidebar-item[data-nodetype='component'] > svg {
+  display: none;
+}
+
+.sidebar-item[data-nodetype='document'] > svg,
+.sidebar-item[data-nodetype='story'] > svg {
+  margin-left: 0px;
+  margin-right: 8px;
+}
+
+.sidebar-item[data-selected='false'] > svg {
+  color: var(--msk-gray-50);
+}
+
+/**
+   * Hide the caret icon for sidebar items that can be expanded
+   * we are fixing the size to hold our chevron icon
+   */
+.sidebar-item[data-nodetype='group'] > span,
+.sidebar-item[data-nodetype='component'] > span,
+.sidebar-subheading[data-nodetype='root'] > button > span {
+  border: none !important;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 2px;
+}
+
+/**
+   * This is our msk-icon attributs for the chevron
+   * Icon can be changed via the content property
+   */
+.sidebar-item > span::after,
+.sidebar-subheading[data-nodetype='root']
+  > button[data-action='collapse-root']
+  > span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: msk-icon !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-variant: normal;
+  font-size: 1.25rem;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  content: 'chevron_right';
+  transform: translate(-50%, -50%);
+}
+
+.sidebar-item > span::after {
+  color: var(--msk-gray-50);
+}
+
+/**
+   * For search
+   */
+.search-result-item > a > svg {
+  color: var(--msk-gray-50) !important;
+}
+
+/**
+   * If we are using 'showRoots' inside manager.js|ts then the code
+   * below will style the root node
+   */
+.sidebar-subheading[data-nodetype='root']
+  > button[data-action='collapse-root'][aria-expanded='false']
+  > span::after {
+  color: var(--msk-blue-70);
+  opacity: 1;
+}
+
+.sidebar-subheading[data-nodetype='root']
+  > button[data-action='collapse-root'][aria-expanded='true']
+  > span::after {
+  opacity: 0;
+}
+
+.sidebar-subheading[data-nodetype='root'] {
+  color: var(--msk-blue-70);
+}
+
+.sidebar-subheading[data-nodetype='root']
+  > button[data-action='collapse-root']
+  > span::after {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.sidebar-subheading-action {
+  color: var(--msk-blue-70) !important;
+}
+
+.sidebar-subheading[data-nodetype='root']
+  > button[data-action='collapse-root']:focus {
+  color: var(--msk-blue-70);
+}

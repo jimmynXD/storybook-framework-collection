@@ -1,0 +1,38 @@
+/*
+    Going forward
+        for variables, use prefix $msk--
+*/
+h1 {
+  font-family: 'gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+h2 {
+  font-family: 'gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+h3 {
+  font-family: 'gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+h4 {
+  font-family: 'gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+h5 {
+  font-family: 'gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+h6 {
+  font-family: 'gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+p {
+  font-family: 'gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+pre,
+pre * .token,
+code,
+code * .token {
+  font-family: 'redhat-mono', 'Menlo', Courier, monospace !important;
+}

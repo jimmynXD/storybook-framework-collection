@@ -37,3 +37,13 @@ First, setup nvm as your node manager first (follow directions during the instal
   - `tsconfig-local` handles all the typescript rules
 - `apps` (application) directory handles all the web applications
   - `web` is the main application
+
+## Github process
+
+- Create your own branch
+  - `git checkout -b <branch-name>`
+- after you are done with your changes, commit your changes
+  - `git add .` to add all files you've changed
+  - `pnpm run commit` to commit your changes
+    - go throught the prompts
+  - `git push` to push your changes to your branch

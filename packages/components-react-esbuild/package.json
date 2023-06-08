@@ -1,5 +1,5 @@
 {
-  "name": "@local/components-react-tsup",
+  "name": "@local/components-react-esbuild",
   "version": "0.0.0",
   "private": true,
   "license": "UNLICENSED",
@@ -12,12 +12,12 @@
   "scripts": {
     "build": "concurrently \"pnpm run build:ui\" \"pnpm run build:sb\"",
     "build:sb": "storybook build",
-    "build:ui": "tsup",
+    "build:ui": "node ./esbuild.js",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "deploy:sb": "node ./scripts/deploy.js",
+    "deploy": "node ./scripts/deploy.js",
     "dev": "concurrently \"pnpm run dev:ui\" \"pnpm run dev:sb\"",
     "dev:sb": "pnpm run storybook",
-    "dev:ui": "tsup --watch",
+    "dev:ui": "node ./esbuild.js --watch",
     "lint": "eslint \"components/**/*.ts*\"",
     "preview:sb": "pnpm dlx http-server ./storybook-static",
     "storybook": "storybook dev -p 6006 --ci"
@@ -54,7 +54,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.0.9",
-    "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   },
   "eslintConfig": {
