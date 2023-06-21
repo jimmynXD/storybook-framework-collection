@@ -6,7 +6,6 @@
     "bootstrap": "pnpm install && husky install",
     "build": "turbo run build",
     "clean": "turbo run clean --parallel && rm -rf node_modules",
-    "commit": "commit",
     "dev": "turbo run dev --no-cache --continue",
     "hook:pre-commit": "lint-staged",
     "init": "corepack prepare pnpm@latest --activate && pnpm run bootstrap",
@@ -20,17 +19,28 @@
     "@changesets/cli": "^2.26.1",
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
-    "@commitlint/prompt-cli": "^17.6.5",
     "@local/eslint-config": "workspace:*",
     "@local/prettier-config": "workspace:*",
     "@local/tsconfig": "workspace:*",
+    "commitizen": "^4.3.0",
     "commitlint": "^17.6.5",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.41.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "syncpack": "^10.1.0",
     "turbo": "^1.9.9"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "engines": {
     "node": "18.16.0"
@@ -50,10 +60,5 @@
     ]
   },
   "packageManager": "pnpm@8.6.0",
-  "prettier": "@local/prettier-config",
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  }
+  "prettier": "@local/prettier-config"
 }

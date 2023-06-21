@@ -20,6 +20,30 @@ module.exports = {
   // we control versions for packages that are the same in every project.
   versionGroups: [
     {
+      label: 'Carbon react packages',
+      packages: ['**'],
+      dependencies: [
+        'carbon-components-react',
+        '@types/carbon-components-react',
+      ],
+      dependencyTypes: ['dev', 'prod'],
+      pinVersion: '7.49.0',
+    },
+    {
+      label: 'Carbon common package',
+      packages: ['**'],
+      dependencies: ['carbon-components'],
+      dependencyTypes: ['dev', 'prod'],
+      pinVersion: '10.56.0',
+    },
+    {
+      label: 'Carbon icon package',
+      packages: ['**'],
+      dependencies: ['carbon-icons'],
+      dependencyTypes: ['dev', 'prod'],
+      pinVersion: '7.0.7',
+    },
+    {
       label: 'MSK DSM packages',
       packages: ['**'],
       dependencies: [
@@ -30,7 +54,7 @@ module.exports = {
         '@mskcc/components-react',
       ],
       dependencyTypes: ['dev', 'prod'],
-      pinVersion: '^1.14.0',
+      pinVersion: '^1.15.1',
     },
     {
       label: 'Internal configs',

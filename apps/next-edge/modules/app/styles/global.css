@@ -1,2 +1,4 @@
-@import '@mskcc/fundamentals/css/styles-all.css';
-@import '@mskcc/icons/dist/msk-icon.css';
+@import '@mskcc/fundamentals';
+@import '@mskcc/components';
+@import '@mskcc/icons';
+@import './_root.css';

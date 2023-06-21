@@ -1,0 +1,76 @@
+# name: deploy vitepress to github pages
+
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - main
+
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
+
+# # Allow one concurrent deployment
+# concurrency:
+#   group: 'pages'
+#   cancel-in-progress: true
+
+# jobs:
+#   build-and-deploy:
+#     runs-on: [self-hosted, linux, x64]
+#     environment: production
+
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v3
+
+#       - name: Get node version
+#         run: |
+#           echo "PROJECT_NODE_VERSION=$(cat $GITHUB_WORKSPACE/.nvmrc)" >> $GITHUB_ENV
+
+#       - name: Setup Node.js version ${{ env.PROJECT_NODE_VERSION }}
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: ${{ env.PROJECT_NODE_VERSION }}
+
+#       # Install pkg manager pnpm
+#       - name: Install pnpm
+#         uses: mskactions/setup-pnpm@v2.2.4
+#         id: pnpm-install
+#         with:
+#           run_install: false
+
+#       - name: Get pnpm store directory
+#         id: pnpm-cache
+#         shell: bash
+#         run: |
+#           echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+#       - uses: actions/cache@v3
+#         name: Setup pnpm cache
+#         with:
+#           path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+#           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+#           restore-keys: |
+#             ${{ runner.os }}-pnpm-store-
+
+#       - name: Install dependencies
+#         run: pnpm install
+
+#       - name: Create home directory
+#         run: |
+#           mkdir -p /home/runner && chmod -R 777 /home/runner
+#           echo "HOME=/home/runner" >> $GITHUB_ENV
+
+#       - name: Build Vite
+#         run: pnpm exec vitepress build
+#         working-directory: apps/vitepress
+
+#       - name: Deploy gh-pages
+#         run: |
+#           git config --global user.name "${{ secrets.GH_NAME }}"
+#           git config --global user.email "${{ secrets.GH_EMAIL }}"
+#           echo "machine github.mskcc.org login ${{ secrets.GH_NAME }} password ${{ secrets.MSK_GITHUB_TOKEN }}" > ~/.netrc
+#           pnpm exec gh-pages -d .vitepress/dist
+#         working-directory: apps/vitepress

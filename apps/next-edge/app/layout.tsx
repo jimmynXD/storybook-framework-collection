@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'MSK Next Edge',
-  description: 'Nextjs with react-hook-forms',
+  description: 'Nextjs starter for MSKCC',
   viewport: 'width=device-width, initial-scale=1',
   icons: [
     {

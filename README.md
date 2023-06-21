@@ -1,5 +1,7 @@
 # Frontend Monorepo
 
+This is a collection of frontend applications (`apps` dir) built on top of MSKCC DSM. They work in conjuction with various helper packages (`packages` dir) to provide code quality and component prototyping/sharing.
+
 ## Pre-requisites
 
 First, setup nvm as your node manager first (follow directions during the install)
@@ -23,27 +25,23 @@ First, setup nvm as your node manager first (follow directions during the instal
 - run `pnpm run dev` to load all dev environments
   - you can navigate to the respective directory and run `pnpm run dev` to load a specific dev environment
 
-## Breakdown
-
-- root files
-  - `commitlinterrc.json` sets your commit message format and rules
-  - `.syncpackrc.js` keeps all the package.json in sync
-  - `.nvmrc` lets nvm node manager the version of node the repo is using
-  - `turbo.json` is what we use to manage how we run scripts and handle cache throughout the monorepo
-  - `dsm-ref.code-workspace` controls the vscode workspace settings
-- `packages` directory handles packages that are used throughout the monorepo
-  - `eslint-config-local` handles all the code quality and linting rules
-  - `prettier-config-local` handles all the code formatting (look) rules
-  - `tsconfig-local` handles all the typescript rules
-- `apps` (application) directory handles all the web applications
-  - `web` is the main application
-
 ## Github process
 
 - Create your own branch
   - `git checkout -b <branch-name>`
 - after you are done with your changes, commit your changes
   - `git add .` to add all files you've changed
-  - `pnpm run commit` to commit your changes
-    - go throught the prompts
+  - `git commit` to commit your changes
+    - go throught the prompts to update messages
   - `git push` to push your changes to your branch
+
+## Keep up-to-date with this template
+
+- create a new `git remote` to the template repo
+  - `git remote add template https://github.mskcc.org/msk/monorepo-template.git`
+- fetch changes from template repo
+  - `git fetch template`
+  - a new branch will be created via `template/main`
+- create a new branch (don't merge into main) and merge
+  - `git checkout -b <branch-name>`
+  - `git merge template/main --allow-unrelated-histories`

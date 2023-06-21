@@ -1,5 +1,5 @@
 {
-  "extends": "@mskcc/tsconfig/react-library",
+  "extends": "@local/tsconfig/react-library",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {

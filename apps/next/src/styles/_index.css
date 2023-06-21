@@ -1,0 +1,23 @@
+.msk-next-components {
+  padding-top: 2rem;
+}
+
+.msk-next-tile-content {
+  padding: 2rem;
+}
+
+.msk-next-tile-content > * > * {
+  margin-top: 1rem;
+}
+
+.msk-next-tooltip-label {
+  position: relative;
+}
+
+.msk-next-tooltip {
+  position: absolute;
+  right: -4px;
+  top: 0;
+  transform: translateX(100%);
+  top: 0;
+}
