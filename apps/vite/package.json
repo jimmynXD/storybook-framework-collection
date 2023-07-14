@@ -1,5 +1,5 @@
 {
-  "name": "vite",
+  "name": "vite-app",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,9 @@
   },
   "dependencies": {
     "@carbon/vue": "3.0.5-alpha.0",
-    "@mskcc/components": "^1.15.1",
-    "@mskcc/fundamentals": "^1.15.1",
-    "@mskcc/icons": "^1.15.1",
+    "@mskcc/components": "^1.16.0",
+    "@mskcc/fundamentals": "^1.16.0",
+    "@mskcc/icons": "^1.16.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"
   },

@@ -1,5 +1,11 @@
 # @mskcc/storybook-assets
 
+## 1.0.1
+
+### Patch Changes
+
+- dep
+
 ## 1.0.0
 
 ### Major Changes

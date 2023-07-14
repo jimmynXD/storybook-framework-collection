@@ -1,10 +1,14 @@
 {
   "name": "@mskcc/storybook-assets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "license": "UNLICENSED",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist/**",
     "styles/**"
@@ -21,18 +25,18 @@
   },
   "dependencies": {
     "@geometricpanda/storybook-addon-badges": "^2.0.0",
+    "@mskcc/fundamentals": "^1.16.0",
+    "@mskcc/icons": "^1.16.0",
     "@storybook/theming": "^7.0.9"
   },
   "devDependencies": {
-    "@mskcc/fundamentals": "1.14.0",
-    "@types/node": "16",
-    "concurrently": "^8.0.1",
-    "sass": "^1.56.1",
-    "ts-node": "^10.9.1",
     "@local/tsconfig": "workspace:*",
+    "@types/node": "^18",
+    "concurrently": "^8.0.1",
+    "sass": "^1.62.1",
+    "ts-node": "^10.9.1",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   },
-  "keywords": [],
-  "module": "./dist/index.mjs"
+  "keywords": []
 }

@@ -23,10 +23,10 @@
     "storybook": "storybook dev -p 6006 --ci"
   },
   "dependencies": {
-    "@mskcc/components": "^1.15.1",
-    "@mskcc/components-react": "^1.15.1",
-    "@mskcc/fundamentals": "^1.15.1",
-    "@mskcc/icons": "^1.15.1",
+    "@mskcc/components": "^1.16.0",
+    "@mskcc/components-react": "^1.16.0",
+    "@mskcc/fundamentals": "^1.16.0",
+    "@mskcc/icons": "^1.16.0",
     "clsx": "^1.2.1"
   },
   "devDependencies": {

@@ -8,7 +8,7 @@
 module.exports = {
   semverRange: '^',
   source: [
-    'core/package.json',
+    'core/*/package.json',
     'package.json',
     'apps/*/package.json',
     'packages/*/package.json',
@@ -54,7 +54,7 @@ module.exports = {
         '@mskcc/components-react',
       ],
       dependencyTypes: ['dev', 'prod'],
-      pinVersion: '^1.15.1',
+      pinVersion: '^1.16.0',
     },
     {
       label: 'Internal configs',

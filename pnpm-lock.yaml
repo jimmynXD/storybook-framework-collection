@@ -57,17 +57,17 @@ importers:
   apps/next:
     dependencies:
       '@mskcc/components':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/components-react':
-        specifier: ^1.15.1
-        version: 1.15.1(@types/carbon-components-react@7.49.0)(carbon-components-react@7.49.0)(carbon-components@10.56.0)(carbon-icons@7.0.7)
+        specifier: ^1.16.0
+        version: 1.16.0(@types/carbon-components-react@7.49.0)(carbon-components-react@7.49.0)(carbon-components@10.56.0)(carbon-icons@7.0.7)
       '@mskcc/fundamentals':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/icons':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       carbon-components:
         specifier: 10.56.0
         version: 10.56.0
@@ -109,17 +109,17 @@ importers:
   apps/next-edge:
     dependencies:
       '@mskcc/components':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/components-react':
-        specifier: ^1.15.1
-        version: 1.15.1(@types/carbon-components-react@7.49.0)(carbon-components-react@7.49.0)(carbon-components@10.56.0)(carbon-icons@7.0.7)
+        specifier: ^1.16.0
+        version: 1.16.0(@types/carbon-components-react@7.49.0)(carbon-components-react@7.49.0)(carbon-components@10.56.0)(carbon-icons@7.0.7)
       '@mskcc/fundamentals':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/icons':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       carbon-components-react:
         specifier: 7.49.0
         version: 7.49.0(carbon-components@10.56.0)(carbon-icons@7.0.7)(react-dom@18.2.0)(react@18.2.0)
@@ -161,17 +161,17 @@ importers:
         specifier: workspace:*
         version: link:../../packages/components-nuxt3
       '@mskcc/components':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/components-vue':
-        specifier: ^1.15.1
-        version: 1.15.1(@babel/core@7.21.8)(rollup@2.79.1)
+        specifier: ^1.16.0
+        version: 1.16.0(@babel/core@7.21.8)(rollup@2.79.1)
       '@mskcc/fundamentals':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/icons':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
     devDependencies:
       '@local/eslint-config':
         specifier: workspace:*
@@ -204,14 +204,14 @@ importers:
         specifier: 3.0.5-alpha.0
         version: 3.0.5-alpha.0(vue@3.3.4)
       '@mskcc/components':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/fundamentals':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/icons':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       vue:
         specifier: ^3.3.4
         version: 3.3.4
@@ -238,108 +238,17 @@ importers:
         specifier: ^1.6.5
         version: 1.6.5(typescript@5.0.4)
 
-  core/components-react-edge:
-    dependencies:
-      '@mskcc/components':
-        specifier: ^1.15.1
-        version: 1.15.1
-      '@mskcc/components-react':
-        specifier: ^1.15.1
-        version: 1.15.1(@types/carbon-components-react@7.49.0)(carbon-components-react@7.49.0)(carbon-components@10.56.0)(carbon-icons@7.0.7)
-      '@mskcc/fundamentals':
-        specifier: ^1.15.1
-        version: 1.15.1
-      '@mskcc/icons':
-        specifier: ^1.15.1
-        version: 1.15.1
-      clsx:
-        specifier: ^1.2.1
-        version: 1.2.1
-    devDependencies:
-      '@geometricpanda/storybook-addon-badges':
-        specifier: ^2.0.0
-        version: 2.0.0(@storybook/blocks@7.0.9)(@storybook/components@7.0.20)(@storybook/core-events@7.0.20)(@storybook/manager-api@7.0.9)(@storybook/preview-api@7.0.20)(@storybook/theming@7.0.9)(@storybook/types@7.0.20)(react-dom@18.2.0)(react@18.2.0)
-      '@local/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config-local
-      '@local/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tsconfig-local
-      '@mskcc/storybook-assets':
-        specifier: ^1.0.0
-        version: link:../storybook-assets
-      '@storybook/addon-essentials':
-        specifier: ^7.0.9
-        version: 7.0.9(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/addon-interactions':
-        specifier: ^7.0.9
-        version: 7.0.9(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/addon-links':
-        specifier: ^7.0.9
-        version: 7.0.9(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/blocks':
-        specifier: ^7.0.9
-        version: 7.0.9(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/manager-api':
-        specifier: ^7.0.9
-        version: 7.0.9(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/nextjs':
-        specifier: ^7.0.9
-        version: 7.0.9(@babel/core@7.21.8)(esbuild@0.17.18)(next@13.4.2)(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.4)(webpack@5.86.0)
-      '@storybook/react':
-        specifier: ^7.0.9
-        version: 7.0.9(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.4)
-      '@storybook/testing-library':
-        specifier: ^0.1.0
-        version: 0.1.0
-      '@storybook/theming':
-        specifier: ^7.0.9
-        version: 7.0.9(react-dom@18.2.0)(react@18.2.0)
-      '@types/node':
-        specifier: ^18
-        version: 18.0.0
-      '@types/react':
-        specifier: ^18.2.6
-        version: 18.2.6
-      '@types/react-dom':
-        specifier: ^18.2.4
-        version: 18.2.4
-      concurrently:
-        specifier: ^8.0.1
-        version: 8.0.1
-      esbuild:
-        specifier: ^0.17.18
-        version: 0.17.18
-      esbuild-sass-plugin:
-        specifier: ^2.9.0
-        version: 2.9.0(esbuild@0.17.18)
-      eslint:
-        specifier: ^8.41.0
-        version: 8.41.0
-      next:
-        specifier: ^13.4.2
-        version: 13.4.2(@babel/core@7.21.8)(react-dom@18.2.0)(react@18.2.0)
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      storybook:
-        specifier: ^7.0.9
-        version: 7.0.9
-      tsup:
-        specifier: ^6.7.0
-        version: 6.7.0(postcss@8.4.24)(ts-node@10.9.1)(typescript@5.0.4)
-      typescript:
-        specifier: ^5.0.4
-        version: 5.0.4
-
   core/storybook-assets:
     dependencies:
       '@geometricpanda/storybook-addon-badges':
         specifier: ^2.0.0
         version: 2.0.0(@storybook/blocks@7.0.9)(@storybook/components@7.0.20)(@storybook/core-events@7.0.20)(@storybook/manager-api@7.0.9)(@storybook/preview-api@7.0.20)(@storybook/theming@7.0.9)(@storybook/types@7.0.20)(react-dom@18.2.0)(react@18.2.0)
+      '@mskcc/fundamentals':
+        specifier: ^1.16.0
+        version: 1.16.0
+      '@mskcc/icons':
+        specifier: ^1.16.0
+        version: 1.16.0
       '@storybook/theming':
         specifier: ^7.0.9
         version: 7.0.9(react-dom@18.2.0)(react@18.2.0)
@@ -347,21 +256,18 @@ importers:
       '@local/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig-local
-      '@mskcc/fundamentals':
-        specifier: 1.14.0
-        version: 1.14.0
       '@types/node':
-        specifier: '16'
-        version: 16.0.0
+        specifier: ^18
+        version: 18.0.0
       concurrently:
         specifier: ^8.0.1
         version: 8.0.1
       sass:
-        specifier: ^1.56.1
+        specifier: ^1.62.1
         version: 1.62.1
       ts-node:
         specifier: ^10.9.1
-        version: 10.9.1(@types/node@16.0.0)(typescript@5.0.4)
+        version: 10.9.1(@types/node@18.0.0)(typescript@5.0.4)
       tsup:
         specifier: ^6.7.0
         version: 6.7.0(postcss@8.4.24)(ts-node@10.9.1)(typescript@5.0.4)
@@ -372,23 +278,23 @@ importers:
   core/tailwind:
     dependencies:
       '@mskcc/fundamentals':
-        specifier: ^1.14.0
-        version: 1.14.0
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/icons':
-        specifier: ^1.14.0
-        version: 1.14.0
+        specifier: ^1.16.0
+        version: 1.16.0
       autoprefixer:
-        specifier: ^10.4.13
-        version: 10.4.13(postcss@8.4.21)
+        specifier: ^10.4.14
+        version: 10.4.14(postcss@8.4.24)
       postcss:
-        specifier: ^8.4.21
-        version: 8.4.21
+        specifier: ^8.4.23
+        version: 8.4.24
       postcss-import:
         specifier: ^15.1.0
-        version: 15.1.0(postcss@8.4.21)
+        version: 15.1.0(postcss@8.4.24)
       tailwindcss:
-        specifier: ^3.2.4
-        version: 3.2.4(postcss@8.4.21)(ts-node@10.9.1)
+        specifier: ^3.3.2
+        version: 3.3.2(ts-node@10.9.1)
 
   packages/components-nuxt3:
     devDependencies:
@@ -408,17 +314,17 @@ importers:
   packages/components-react-esbuild:
     dependencies:
       '@mskcc/components':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/components-react':
-        specifier: ^1.15.1
-        version: 1.15.1(@types/carbon-components-react@7.49.0)(carbon-components-react@7.49.0)(carbon-components@10.56.0)(carbon-icons@7.0.7)
+        specifier: ^1.16.0
+        version: 1.16.0(@types/carbon-components-react@7.49.0)(carbon-components-react@7.49.0)(carbon-components@10.56.0)(carbon-icons@7.0.7)
       '@mskcc/fundamentals':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/icons':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       clsx:
         specifier: ^1.2.1
         version: 1.2.1
@@ -502,17 +408,17 @@ importers:
   packages/components-react-tsup:
     dependencies:
       '@mskcc/components':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/components-react':
-        specifier: ^1.15.1
-        version: 1.15.1(@types/carbon-components-react@7.49.0)(carbon-components-react@7.49.0)(carbon-components@10.56.0)(carbon-icons@7.0.7)
+        specifier: ^1.16.0
+        version: 1.16.0(@types/carbon-components-react@7.49.0)(carbon-components-react@7.49.0)(carbon-components@10.56.0)(carbon-icons@7.0.7)
       '@mskcc/fundamentals':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/icons':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       clsx:
         specifier: ^1.2.1
         version: 1.2.1
@@ -650,11 +556,11 @@ importers:
   packages/tailwind-local:
     dependencies:
       '@mskcc/fundamentals':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       '@mskcc/icons':
-        specifier: ^1.15.1
-        version: 1.15.1
+        specifier: ^1.16.0
+        version: 1.16.0
       autoprefixer:
         specifier: ^10.4.14
         version: 10.4.14(postcss@8.4.24)
@@ -2426,12 +2332,6 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@carbon/icons-vue@10.49.1:
-    resolution: {integrity: sha512-bUomWnlpfuFWOszjBvNlpQiV8CuTIFZnmmuSbxEiXFXBMhAqRctqbtY4ZHKm8tTiuHafCuuY/onad3rrcVLfTA==}
-    dependencies:
-      '@carbon/icon-helpers': 10.40.0
-    dev: false
-
   /@carbon/icons-vue@10.63.0:
     resolution: {integrity: sha512-JLvq0gYc6S25kOy4JvyGe6jykJezfngsUoTX18nSauE4T5Ikho7osQw/uXzsJNqPlk7HksnNrkrj142omO1PRA==}
     dependencies:
@@ -3508,8 +3408,8 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@mskcc/components-react@1.15.1(@types/carbon-components-react@7.49.0)(carbon-components-react@7.49.0)(carbon-components@10.56.0)(carbon-icons@7.0.7):
-    resolution: {integrity: sha512-Anjezhw6p4gskbLbvSMD47YimszU6+XlnPaxjn5xNwhZ82w0clY5hPU0Rzo2ZeYw1TOD9Woiu9zfB/izJElVJQ==}
+  /@mskcc/components-react@1.16.0(@types/carbon-components-react@7.49.0)(carbon-components-react@7.49.0)(carbon-components@10.56.0)(carbon-icons@7.0.7):
+    resolution: {integrity: sha512-aH86A7MWxZ4U6DEQHG7aQ7PyzxdzNwZMcEiXHp2R4Dx5HOxYfv2+2IA88/Cv3LWNkOTxuJ4ztSD0kvBaNhaSdQ==}
     engines: {node: '>=14'}
     peerDependencies:
       '@types/carbon-components-react': 7.49.0
@@ -3517,7 +3417,7 @@ packages:
       carbon-components-react: 7.49.0
       carbon-icons: 7.0.7
     dependencies:
-      '@mskcc/icons': 1.15.1
+      '@mskcc/icons': 1.16.0
       '@types/carbon-components-react': 7.49.0
       carbon-components: 10.56.0
       carbon-components-react: 7.49.0(carbon-components@10.56.0)(carbon-icons@7.0.7)(react-dom@18.2.0)(react@18.2.0)
@@ -3525,13 +3425,13 @@ packages:
       clsx: 1.2.1
     dev: false
 
-  /@mskcc/components-vue@1.15.1(@babel/core@7.21.8)(rollup@2.79.1):
-    resolution: {integrity: sha512-M1ZCzOszdbQSzU/lw43FR3i9ud0M8ih8qm/ET25TYwiDWCfNP/5Nq9r3HC31XHBnWBOtnktDZEapVfvnBEUt7g==}
+  /@mskcc/components-vue@1.16.0(@babel/core@7.21.8)(rollup@2.79.1):
+    resolution: {integrity: sha512-Wyd++sOfztO00sinTBHTp8lG1kkvWg9lSB4rZ9JckCnb//jTnzVcuvkAT2j8j8TE/h/6LlzovgYpK9FEAGRqDg==}
     dependencies:
-      '@carbon/icons-vue': 10.49.1
+      '@carbon/icons-vue': 10.69.0
       '@carbon/vue': 2.45.1
-      '@mskcc/components': 1.15.1
-      '@mskcc/fundamentals': 1.15.1
+      '@mskcc/components': 1.16.0
+      '@mskcc/fundamentals': 1.16.0
       '@rollup/plugin-babel': 5.3.1(@babel/core@7.21.8)(rollup@2.79.1)
       carbon-components: 10.56.0
       lodash.debounce: 4.0.8
@@ -3541,36 +3441,26 @@ packages:
       - rollup
     dev: false
 
-  /@mskcc/components@1.15.1:
-    resolution: {integrity: sha512-xLaLT6PrnNpKp526jwVxSbxsMMJGOCmbhpYipdRxLvVsf0NL5LZFPQamyP/p2Xbjwe5+XZxOLMncRgJpdpFe9A==}
+  /@mskcc/components@1.16.0:
+    resolution: {integrity: sha512-BzyB8vy3OktclpIu0TprCcnaWWx6Iqd0KmCDxPM+ktxddwjSyz7w42nokWzqCu1HCnkk8ItqYjaUZ4x60FkuiQ==}
     dependencies:
       '@ag-grid-community/styles': 28.2.1
-      '@mskcc/fundamentals': 1.15.1
-      '@mskcc/icons': 1.15.1
+      '@mskcc/fundamentals': 1.16.0
+      '@mskcc/icons': 1.16.0
       breakpoint-sass: 2.7.1
       breakpoint-slicer: 2.0.0
       carbon-components: 10.56.0
     dev: false
 
-  /@mskcc/fundamentals@1.14.0:
-    resolution: {integrity: sha512-bhA4mFTLdJoOKle9BFqb/S28+SKbL/8BJjthacKLmUttJF7vINo0VX8ctwfRMKf33Wvrs+Rdvzgw2RrQ4grIgA==}
-    dependencies:
-      breakpoint-sass: 2.7.1
-      breakpoint-slicer: 2.0.0
-
-  /@mskcc/fundamentals@1.15.1:
-    resolution: {integrity: sha512-IYQsdvsQJaSw66MlKEwUSskR5nWXdNJnLtN7rSRkt8uTplqb4XArhgnzHlw69zwDzpjFlml8+bYZWkCouMseZA==}
+  /@mskcc/fundamentals@1.16.0:
+    resolution: {integrity: sha512-QU6eVrACqiX3AHO9GxExxIhhKPoWY5PpktOoar7b6dxxtMa3pLZxbWHSnd8OcKL9UpIdGg9hKnoWY4T/yX//1A==}
     dependencies:
       breakpoint-sass: 2.7.1
       breakpoint-slicer: 2.0.0
     dev: false
 
-  /@mskcc/icons@1.14.0:
-    resolution: {integrity: sha512-qQvcOcbhNoq/oHVCkytNH9GrriKntXVTiY5h68Y5fUDmkclCtR7joEnx6DcI0uI5iNiedMx+N+fJB+yfPjwGhA==}
-    dev: false
-
-  /@mskcc/icons@1.15.1:
-    resolution: {integrity: sha512-IJ07xc3hjjnCB1LTzSFpheGxDr3jrb2jvri+QE+aMAARBIVcm/AUUUknYHE+CrRzBejPwVlBCBBMh/5zQFanvg==}
+  /@mskcc/icons@1.16.0:
+    resolution: {integrity: sha512-OrsLdizAHZynpwsAsio8cyWXdvtu7YMZahoGHUhkvDFlFc8gJFWY6Oro26Vw7eeSjBvT9dm+NRhL92pLZcOIgA==}
     dev: false
 
   /@ndelangen/get-tarball@3.0.9:
@@ -6308,17 +6198,10 @@ packages:
     dependencies:
       acorn: 8.8.2
 
-  /acorn-node@1.8.2:
-    resolution: {integrity: sha512-8mt+fslDufLYntIoPAaIMUe/lrbrehIiwmR3t2k9LljIzoigEPF27eLk2hy8zSGzmR/ogr7zbRKINMo1u0yh5A==}
-    dependencies:
-      acorn: 7.4.1
-      acorn-walk: 7.2.0
-      xtend: 4.0.2
-    dev: false
-
   /acorn-walk@7.2.0:
     resolution: {integrity: sha512-OPdCF6GsMIP+Az+aWfAAOEt2/+iVDKE7oy6lJ098aoe59oAmK76qV6Gw60SbZ8jHuG2wH058GF4pLFbYamYrVA==}
     engines: {node: '>=0.4.0'}
+    dev: true
 
   /acorn-walk@8.2.0:
     resolution: {integrity: sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==}
@@ -6328,6 +6211,7 @@ packages:
     resolution: {integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+    dev: true
 
   /acorn@8.8.2:
     resolution: {integrity: sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==}
@@ -6687,22 +6571,6 @@ packages:
     resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==}
     engines: {node: '>= 4.0.0'}
 
-  /autoprefixer@10.4.13(postcss@8.4.21):
-    resolution: {integrity: sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg==}
-    engines: {node: ^10 || ^12 || >=14}
-    hasBin: true
-    peerDependencies:
-      postcss: ^8.1.0
-    dependencies:
-      browserslist: 4.21.7
-      caniuse-lite: 1.0.30001495
-      fraction.js: 4.2.0
-      normalize-range: 0.1.2
-      picocolors: 1.0.0
-      postcss: 8.4.21
-      postcss-value-parser: 4.2.0
-    dev: false
-
   /autoprefixer@10.4.14(postcss@8.4.24):
     resolution: {integrity: sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==}
     engines: {node: ^10 || ^12 || >=14}
@@ -6966,9 +6834,11 @@ packages:
 
   /breakpoint-sass@2.7.1:
     resolution: {integrity: sha512-99tYVacptnG6v3VnX62W07TnifrroDnWql+1wuTOfPCEGeNoMvpd0Mw+o+JZk50mAZ1CIHAr1I3GatHEZ2VZeQ==}
+    dev: false
 
   /breakpoint-slicer@2.0.0:
     resolution: {integrity: sha512-pZJho00OGkH8kxBJDMrG2WAYw+jLT4npvuD4kSAUz95MC2lU6cb9jjKVv8Lu4SZF15L0qW7pKIxFLQUjokNYLA==}
+    dev: false
 
   /breakword@1.0.6:
     resolution: {integrity: sha512-yjxDAYyK/pBvws9H4xKYpLDpYKEH6CzrBPAuXq3x18I+c/2MkVtT3qAr7Oloi6Dss9qNhPVueAAVU1CSeNDIXw==}
@@ -8185,10 +8055,6 @@ packages:
       has-property-descriptors: 1.0.0
       object-keys: 1.1.1
 
-  /defined@1.0.1:
-    resolution: {integrity: sha512-hsBd2qSVCRE+5PmNdHt1uzyrFu5d3RwmFDKzyNZMFq/EwDNJF7Ee5+D5oEKF0hU6LhtoUF1macFvOe4AskQC1Q==}
-    dev: false
-
   /defu@6.1.2:
     resolution: {integrity: sha512-+uO4+qr7msjNNWKYPHqN/3+Dx3NFkmIzayk2L1MyZQlvgZb/J1A0fo410dpKrN2SnqFjt8n4JL8fDJE0wIgjFQ==}
     dev: true
@@ -8269,16 +8135,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /detective@5.2.1:
-    resolution: {integrity: sha512-v9XE1zRnz1wRtgurGu0Bs8uHKFSTdteYZNbIPFVhUZ39L/S79ppMpdmVOZAnoz1jfEFodc48n6MX483Xo3t1yw==}
-    engines: {node: '>=0.8.0'}
-    hasBin: true
-    dependencies:
-      acorn-node: 1.8.2
-      defined: 1.0.1
-      minimist: 1.2.8
-    dev: false
 
   /devalue@4.3.2:
     resolution: {integrity: sha512-KqFl6pOgOW+Y6wJgu80rHpo2/3H07vr8ntR9rkkFIRETewbf5GaYYcakYfiKz89K+sLsuPkQIZaXDMjUObZwWg==}
@@ -12623,30 +12479,6 @@ packages:
       enhanced-resolve: 4.5.0
     dev: true
 
-  /postcss-import@14.1.0(postcss@8.4.21):
-    resolution: {integrity: sha512-flwI+Vgm4SElObFVPpTIT7SU7R3qk2L7PyduMcokiaVKuWv9d/U+Gm/QAd8NDLuykTWTkcrjOeD2Pp1rMeBTGw==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      postcss: ^8.0.0
-    dependencies:
-      postcss: 8.4.21
-      postcss-value-parser: 4.2.0
-      read-cache: 1.0.0
-      resolve: 1.22.2
-    dev: false
-
-  /postcss-import@15.1.0(postcss@8.4.21):
-    resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      postcss: ^8.0.0
-    dependencies:
-      postcss: 8.4.21
-      postcss-value-parser: 4.2.0
-      read-cache: 1.0.0
-      resolve: 1.22.2
-    dev: false
-
   /postcss-import@15.1.0(postcss@8.4.24):
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
     engines: {node: '>=14.0.0'}
@@ -12658,16 +12490,6 @@ packages:
       read-cache: 1.0.0
       resolve: 1.22.2
 
-  /postcss-js@4.0.1(postcss@8.4.21):
-    resolution: {integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==}
-    engines: {node: ^12 || ^14 || >= 16}
-    peerDependencies:
-      postcss: ^8.4.21
-    dependencies:
-      camelcase-css: 2.0.1
-      postcss: 8.4.21
-    dev: false
-
   /postcss-js@4.0.1(postcss@8.4.24):
     resolution: {integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==}
     engines: {node: ^12 || ^14 || >= 16}
@@ -12676,24 +12498,6 @@ packages:
     dependencies:
       camelcase-css: 2.0.1
       postcss: 8.4.24
-    dev: false
-
-  /postcss-load-config@3.1.4(postcss@8.4.21)(ts-node@10.9.1):
-    resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
-    engines: {node: '>= 10'}
-    peerDependencies:
-      postcss: '>=8.0.9'
-      ts-node: '>=9.0.0'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-      ts-node:
-        optional: true
-    dependencies:
-      lilconfig: 2.1.0
-      postcss: 8.4.21
-      ts-node: 10.9.1(@types/node@18.0.0)(typescript@5.0.4)
-      yaml: 1.10.2
     dev: false
 
   /postcss-load-config@3.1.4(postcss@8.4.24)(ts-node@10.9.1):
@@ -12855,16 +12659,6 @@ packages:
       icss-utils: 5.1.0(postcss@8.4.24)
       postcss: 8.4.24
     dev: true
-
-  /postcss-nested@6.0.0(postcss@8.4.21):
-    resolution: {integrity: sha512-0DkamqrPcmkBDsLn+vQDIrtkSbNkv5AD/M322ySo9kqFkCIYklym2xEmWkwo+Y3/qZo34tzEPNUw4y7yMCdv5w==}
-    engines: {node: '>=12.0'}
-    peerDependencies:
-      postcss: ^8.2.14
-    dependencies:
-      postcss: 8.4.21
-      postcss-selector-parser: 6.0.13
-    dev: false
 
   /postcss-nested@6.0.1(postcss@8.4.24):
     resolution: {integrity: sha512-mEp4xPMi5bSWiMbsgoPfcP74lsWLHkQbZc3sY+jWYd65CUwXrUaTp0fmNpa01ZcETKlIgUdFN/MpS2xZtqL9dQ==}
@@ -13049,15 +12843,6 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
-
-  /postcss@8.4.21:
-    resolution: {integrity: sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.6
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
-    dev: false
 
   /postcss@8.4.24:
     resolution: {integrity: sha512-M0RzbcI0sO/XJNucsGjvWU9ERWxb/ytp1w6dKtxTKgixdtQDq4rmx/g8W1hnaheq9jgwL/oyEdH5Bc4WwJKMqg==}
@@ -14457,40 +14242,6 @@ packages:
       ts-toolbelt: 9.6.0
     dev: true
 
-  /tailwindcss@3.2.4(postcss@8.4.21)(ts-node@10.9.1):
-    resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
-    engines: {node: '>=12.13.0'}
-    hasBin: true
-    peerDependencies:
-      postcss: ^8.0.9
-    dependencies:
-      arg: 5.0.2
-      chokidar: 3.5.3
-      color-name: 1.1.4
-      detective: 5.2.1
-      didyoumean: 1.2.2
-      dlv: 1.1.3
-      fast-glob: 3.2.12
-      glob-parent: 6.0.2
-      is-glob: 4.0.3
-      lilconfig: 2.1.0
-      micromatch: 4.0.5
-      normalize-path: 3.0.0
-      object-hash: 3.0.0
-      picocolors: 1.0.0
-      postcss: 8.4.21
-      postcss-import: 14.1.0(postcss@8.4.21)
-      postcss-js: 4.0.1(postcss@8.4.21)
-      postcss-load-config: 3.1.4(postcss@8.4.21)(ts-node@10.9.1)
-      postcss-nested: 6.0.0(postcss@8.4.21)
-      postcss-selector-parser: 6.0.13
-      postcss-value-parser: 4.2.0
-      quick-lru: 5.1.1
-      resolve: 1.22.2
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
   /tailwindcss@3.3.2(ts-node@10.9.1):
     resolution: {integrity: sha512-9jPkMiIBXvPc2KywkraqsUfbfj+dHDb+JPWtSJa9MLFdrPyazI7q6WX2sUrm7R9eVR7qqv3Pas7EvQFzxKnI6w==}
     engines: {node: '>=14.0.0'}
@@ -14763,37 +14514,6 @@ packages:
 
   /ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
-
-  /ts-node@10.9.1(@types/node@16.0.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
-    hasBin: true
-    peerDependencies:
-      '@swc/core': '>=1.2.50'
-      '@swc/wasm': '>=1.2.50'
-      '@types/node': '*'
-      typescript: '>=2.7'
-    peerDependenciesMeta:
-      '@swc/core':
-        optional: true
-      '@swc/wasm':
-        optional: true
-    dependencies:
-      '@cspotcode/source-map-support': 0.8.1
-      '@tsconfig/node10': 1.0.9
-      '@tsconfig/node12': 1.0.11
-      '@tsconfig/node14': 1.0.3
-      '@tsconfig/node16': 1.0.4
-      '@types/node': 16.0.0
-      acorn: 8.8.2
-      acorn-walk: 8.2.0
-      arg: 4.1.3
-      create-require: 1.1.1
-      diff: 4.0.2
-      make-error: 1.3.6
-      typescript: 5.0.4
-      v8-compile-cache-lib: 3.0.1
-      yn: 3.1.1
-    dev: true
 
   /ts-node@10.9.1(@types/node@18.0.0)(typescript@5.0.4):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
@@ -16005,6 +15725,7 @@ packages:
   /xtend@4.0.2:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
     engines: {node: '>=0.4'}
+    dev: true
 
   /xxhashjs@0.2.2:
     resolution: {integrity: sha512-AkTuIuVTET12tpsVIQo+ZU6f/qDmKuRUcjaqR+OIvm+aCBsZ95i7UVY5WJ9TMsSaZ0DA2WxoZ4acu0sPH+OKAw==}
@@ -16033,6 +15754,7 @@ packages:
   /yaml@1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
+    dev: true
 
   /yaml@2.3.1:
     resolution: {integrity: sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==}

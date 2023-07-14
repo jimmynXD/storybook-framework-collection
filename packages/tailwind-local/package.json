@@ -1,6 +1,7 @@
 {
   "name": "@local/tailwind",
   "version": "0.0.0",
+  "private": true,
   "files": [
     "presets.js",
     "dist/*",
@@ -27,8 +28,8 @@
     "update:check": "ncu"
   },
   "dependencies": {
-    "@mskcc/fundamentals": "^1.15.1",
-    "@mskcc/icons": "^1.15.1",
+    "@mskcc/fundamentals": "^1.16.0",
+    "@mskcc/icons": "^1.16.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
     "postcss-import": "^15.1.0",

@@ -1,5 +1,5 @@
 {
-  "name": "nuxt3",
+  "name": "nuxt3-app",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -15,10 +15,10 @@
   },
   "dependencies": {
     "@local/components-nuxt3": "workspace:*",
-    "@mskcc/components": "^1.15.1",
-    "@mskcc/components-vue": "^1.15.1",
-    "@mskcc/fundamentals": "^1.15.1",
-    "@mskcc/icons": "^1.15.1"
+    "@mskcc/components": "^1.16.0",
+    "@mskcc/components-vue": "^1.16.0",
+    "@mskcc/fundamentals": "^1.16.0",
+    "@mskcc/icons": "^1.16.0"
   },
   "devDependencies": {
     "@local/eslint-config": "workspace:*",

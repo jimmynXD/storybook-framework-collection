@@ -1,6 +1,7 @@
 {
   "name": "@mskcc/tailwind",
   "version": "0.0.0",
+  "private": true,
   "files": [
     "presets.js",
     "dist/*",
@@ -24,12 +25,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@mskcc/fundamentals": "^1.14.0",
-    "@mskcc/icons": "^1.14.0",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
+    "@mskcc/fundamentals": "^1.16.0",
+    "@mskcc/icons": "^1.16.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
     "postcss-import": "^15.1.0",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.3.2"
   },
   "peerDependencies": {
     "autoprefixer": ">=10",

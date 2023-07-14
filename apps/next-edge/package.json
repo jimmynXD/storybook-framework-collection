@@ -11,10 +11,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@mskcc/components": "^1.15.1",
-    "@mskcc/components-react": "^1.15.1",
-    "@mskcc/fundamentals": "^1.15.1",
-    "@mskcc/icons": "^1.15.1",
+    "@mskcc/components": "^1.16.0",
+    "@mskcc/components-react": "^1.16.0",
+    "@mskcc/fundamentals": "^1.16.0",
+    "@mskcc/icons": "^1.16.0",
     "carbon-components-react": "7.49.0",
     "next": "^13.4.2",
     "react": "^18.2.0",
