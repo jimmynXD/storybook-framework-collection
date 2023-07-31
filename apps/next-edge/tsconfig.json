@@ -1,5 +1,5 @@
 {
-  "extends": "@local/tsconfig/next-edge",
+  "extends": "@local/tsconfig/next-edge.json",
   "compilerOptions": {
     "plugins": [
       {
@@ -8,8 +8,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./modules/*"],
-      "~/*": ["./*"]
+      "@/*": ["./*"]
     }
   },
   "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],

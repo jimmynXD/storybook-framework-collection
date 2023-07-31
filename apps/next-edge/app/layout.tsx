@@ -1,5 +1,4 @@
-import '@/app/styles/global.css'
-import { RootLayout } from '@/app'
+import { RootLayout } from '@/components'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {

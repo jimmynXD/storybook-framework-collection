@@ -1,6 +1,6 @@
 'use client'
+import '@/styles/global.scss'
 import { usePathname } from 'next/navigation'
-import '../styles/global.css'
 import {
   BaseLayout,
   Footer,

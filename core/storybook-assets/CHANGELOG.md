@@ -1,5 +1,11 @@
 # @mskcc/storybook-assets
 
+## 1.1.0
+
+### Minor Changes
+
+- new carbon and mskcc type
+
 ## 1.0.1
 
 ### Patch Changes

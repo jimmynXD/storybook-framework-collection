@@ -1,0 +1,4 @@
+@use '@mskcc/fundamentals/scss/styles-all.scss';
+@use '@mskcc/components/scss/styles-all.scss' as components with (
+  $prefix: 'cds'
+);
